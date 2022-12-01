@@ -1,0 +1,94 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "raspberry",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GpioIntent",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "STATUS"
+                        }
+                    ],
+                    "samples": [
+                        "turn light {status}",
+                        "turn {status} light",
+                        "show {status} light",
+                        "{status} light"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "STATUS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "red",
+                                "synonyms": [
+                                    "orange",
+                                    "laal"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green",
+                                "synonyms": [
+                                    "blue",
+                                    "hara"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yellow",
+                                "synonyms": [
+                                    "white",
+                                    "peela"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blink",
+                                "synonyms": [
+                                    "dancing",
+                                    "blinking"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off",
+                                "synonyms": [
+                                    "stop"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
